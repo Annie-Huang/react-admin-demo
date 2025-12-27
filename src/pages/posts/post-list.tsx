@@ -4,6 +4,7 @@ import {
   // FunctionField,
   List,
   ReferenceField,
+  TextInput,
   // SimpleList,
   useRecordContext,
 } from 'react-admin';
@@ -14,9 +15,14 @@ const PostPanel = () => {
 };
 
 const PostList = () => {
+  const postFilters = [
+    <TextInput source='q' label='Search' alwaysOn key='searchKey' />,
+  ];
+
   // <List> is the component that will fetch the data from the backend.
   return (
-    <List>
+    // <List>
+    <List filters={postFilters}>
       {/* <DataTable sx={{ '.RaDataTable-headerRow': { padding: '16px' } }}>
           Cannot increase the padding for .RaDataTable-row (<tr>) or .RaDataTable-thead (<thead>) component in CSS as their display value is
           display: table-row;
