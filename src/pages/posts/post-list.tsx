@@ -1,5 +1,6 @@
 import {
   DataTable,
+  EditButton,
   // FunctionField,
   List,
   ReferenceField,
@@ -49,6 +50,8 @@ const PostList = () => {
         <DataTable.Col source='userId'>
           <ReferenceField source='userId' reference='users' />
         </DataTable.Col>
+
+        <EditButton />
       </DataTable>
 
       {/*<SimpleList*/}

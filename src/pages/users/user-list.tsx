@@ -1,4 +1,4 @@
-import { DataTable, List } from 'react-admin';
+import { DataTable, EditButton, List } from 'react-admin';
 
 const UserList = () => {
   return (
@@ -8,6 +8,7 @@ const UserList = () => {
         <DataTable.Col source='name' />
         <DataTable.Col source='email' />
         <DataTable.Col source='phone' />
+        <EditButton />
       </DataTable>
     </List>
   );
