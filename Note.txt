@@ -75,6 +75,29 @@ export const PostShow = () => (
 -------------------------
 
 
+http://localhost:5173/#/users/1/show
+And you can see the console the below:
+-------------
+Guessed Show:
+
+import { EmailField, Show, SimpleShowLayout, TextField } from 'react-admin';
+
+export const UserShow = () => (
+    <Show>
+        <SimpleShowLayout>
+            <TextField source="id" />
+            <TextField source="name" />
+            <TextField source="username" />
+            <EmailField source="email" />
+            <TextField source="address.street" />
+            <TextField source="phone" />
+            <TextField source="website" />
+            <TextField source="company.name" />
+        </SimpleShowLayout>
+    </Show>
+);
+-------------------------
+
 
 
 

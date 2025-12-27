@@ -20,6 +20,6 @@ export const App = () => (
     {/*<Resource name='posts' list={PostList} show={ShowGuesser} />*/}
 
     <Resource name='posts' list={PostList} show={PostShow} />
-    <Resource name='users' list={UserList} />
+    <Resource name='users' list={UserList} show={ShowGuesser} />
   </Admin>
 );
