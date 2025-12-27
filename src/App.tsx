@@ -14,6 +14,7 @@ import UserShow from './pages/users/user-show.tsx';
 import PostEdit from './pages/posts/post-edit.tsx';
 import UserEdit from './pages/users/user-edit.tsx';
 import PostCreate from './pages/posts/post-create.tsx';
+import UserCreate from './pages/users/user-create.tsx';
 
 export const App = () => (
   <Admin layout={Layout} dataProvider={dataProvider}>
@@ -43,6 +44,13 @@ export const App = () => (
 
     {/*<Resource name='users' list={UserList} show={ShowGuesser} />*/}
     {/*<Resource name='users' list={UserList} show={UserShow} edit={EditGuesser} />*/}
-    <Resource name='users' list={UserList} show={UserShow} edit={UserEdit} />
+    {/*<Resource name='users' list={UserList} show={UserShow} edit={UserEdit} />*/}
+    <Resource
+      name='users'
+      list={UserList}
+      show={UserShow}
+      edit={UserEdit}
+      create={UserCreate}
+    />
   </Admin>
 );
