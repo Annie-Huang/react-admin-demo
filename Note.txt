@@ -3,6 +3,7 @@ React Admin Crash Course 2025 (https://www.youtube.com/watch?v=PyaSnpXssks)
 https://github.com/Annie-Huang/react-admin-demo
 
 https://marmelab.com/react-admin/Tutorial.html
+https://jsonplaceholder.typicode.com/posts
 
 -----------------------------------------------------------------------------------
 
@@ -26,3 +27,4 @@ How do you want to install the dependencies?
 
 PS C:\react\react-admin-demo> npm run dev
 
+http://localhost:5173/#/posts
