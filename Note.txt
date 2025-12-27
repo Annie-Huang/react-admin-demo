@@ -52,3 +52,7 @@ export const PostList = () => (
     </List>
 );
 -------------------------
+
+http://localhost:5173/#/posts
+http://localhost:5173/#/users
+http://localhost:5173/#/posts/2/show

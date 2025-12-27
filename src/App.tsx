@@ -1,4 +1,4 @@
-import { Admin, ListGuesser, Resource } from 'react-admin';
+import { Admin, ListGuesser, Resource, ShowGuesser } from 'react-admin';
 import { Layout } from './Layout';
 import { dataProvider } from './dataProvider';
 import PostList from './pages/posts/post-list.tsx';
@@ -12,8 +12,11 @@ export const App = () => (
     */}
     {/*<Resource name='posts' list={ListGuesser} />*/}
 
-    {/* Now we got control on the list, e.g. change the columns order to display */}
-    <Resource name='posts' list={PostList} />
+    {/* Now we got control on the list, e.g. change the columns order to display
+        ShowGuesser allow you to click to the row display the whole record in
+        http://localhost:5173/#/posts/2/show
+     */}
+    <Resource name='posts' list={PostList} show={ShowGuesser} />
     <Resource name='users' list={UserList} />
   </Admin>
 );
