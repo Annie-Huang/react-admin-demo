@@ -22,4 +22,7 @@ Enter the name of a resource you want to add, and validate with Enter (leave emp
 How do you want to install the dependencies?
 ❯ Using npm
 
+--------------------
+
+PS C:\react\react-admin-demo> npm run dev
 
