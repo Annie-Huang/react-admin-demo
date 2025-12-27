@@ -4,8 +4,9 @@ https://github.com/Annie-Huang/react-admin-demo
 
 https://marmelab.com/react-admin/Tutorial.html
 https://jsonplaceholder.typicode.com/posts
-https://marmelab.com/react-admin/FunctionField.html#props
 
+https://marmelab.com/react-admin/FunctionField.html#props
+https://marmelab.com/react-admin/DataTable.html
 
 =========================================================================================================
 

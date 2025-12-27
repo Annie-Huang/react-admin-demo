@@ -6,6 +6,10 @@ import {
   SimpleList,
 } from 'react-admin';
 
+const PostPanel = () => {
+  return <div>Hello</div>;
+};
+
 const PostList = () => {
   // <List> is the component that will fetch the data from the backend.
   return (
@@ -15,8 +19,13 @@ const PostList = () => {
           display: table-row;
           display: table-header-group;
           In order to increase the padding, we have to do it in the cell level: https://stackoverflow.com/questions/3656615/padding-a-table-row
+
+          https://marmelab.com/react-admin/DataTable.html
       */}
-      <DataTable sx={{ '.RaDataTable-headerCell': { padding: '16px' } }}>
+      <DataTable
+        expand={<PostPanel />}
+        sx={{ '.RaDataTable-headerCell': { padding: '16px' } }}
+      >
         <DataTable.Col source='id' />
         <DataTable.Col source='title' label='Post Title' />
 
