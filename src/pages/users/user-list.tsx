@@ -8,7 +8,9 @@ const UserList = () => {
         <DataTable.Col source='name' />
         <DataTable.Col source='email' />
         <DataTable.Col source='phone' />
-        <EditButton />
+        <DataTable.Col>
+          <EditButton />
+        </DataTable.Col>
       </DataTable>
     </List>
   );

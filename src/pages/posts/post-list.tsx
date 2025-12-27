@@ -51,7 +51,11 @@ const PostList = () => {
           <ReferenceField source='userId' reference='users' />
         </DataTable.Col>
 
-        <EditButton />
+        {/* Need to wrap <EditButton> with Col, otherwise, we will get error of:
+            In HTML, <a> cannot be a child of <tr>.*/}
+        <DataTable.Col>
+          <EditButton />
+        </DataTable.Col>
       </DataTable>
 
       {/*<SimpleList*/}
