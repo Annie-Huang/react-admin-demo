@@ -1,4 +1,10 @@
-import { Admin, ListGuesser, Resource, ShowGuesser } from 'react-admin';
+import {
+  Admin,
+  EditGuesser,
+  ListGuesser,
+  Resource,
+  ShowGuesser,
+} from 'react-admin';
 import { Layout } from './Layout';
 import { dataProvider } from './dataProvider';
 import PostList from './pages/posts/post-list.tsx';
@@ -20,7 +26,8 @@ export const App = () => (
      */}
     {/*<Resource name='posts' list={PostList} show={ShowGuesser} />*/}
 
-    <Resource name='posts' list={PostList} show={PostShow} />
+    <Resource name='posts' list={PostList} show={PostShow} edit={EditGuesser} />
+
     {/*<Resource name='users' list={UserList} show={ShowGuesser} />*/}
     <Resource name='users' list={UserList} show={UserShow} />
   </Admin>
