@@ -5,7 +5,7 @@ https://github.com/Annie-Huang/react-admin-demo
 https://marmelab.com/react-admin/Tutorial.html
 https://jsonplaceholder.typicode.com/posts
 
------------------------------------------------------------------------------------
+=========================================================================================================
 
 PS C:\react> npm create react-admin@latest react-admin-demo -- --interactive
 
@@ -23,8 +23,28 @@ Enter the name of a resource you want to add, and validate with Enter (leave emp
 How do you want to install the dependencies?
 ❯ Using npm
 
---------------------
+=========================================================================================================
+
 
 PS C:\react\react-admin-demo> npm run dev
 
 http://localhost:5173/#/posts
+And you can see the console the below:
+-------------
+Guessed List:
+
+import { DataTable, List, ReferenceField } from 'react-admin';
+
+export const PostList = () => (
+    <List>
+        <DataTable>
+            <DataTable.Col source="userId">
+                <ReferenceField source="userId" reference="users" />
+            </DataTable.Col>
+            <DataTable.Col source="id" />
+            <DataTable.Col source="title" />
+            <DataTable.Col source="body" />
+        </DataTable>
+    </List>
+);
+-------------------------
