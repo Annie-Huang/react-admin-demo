@@ -4,6 +4,7 @@ import {
   // FunctionField,
   List,
   ReferenceField,
+  ReferenceInput,
   TextInput,
   // SimpleList,
   useRecordContext,
@@ -17,6 +18,14 @@ const PostPanel = () => {
 const PostList = () => {
   const postFilters = [
     <TextInput source='q' label='Search' alwaysOn key='searchKey' />,
+
+    // if you don't choose alwayOn, then you can only find it under 'ADD FILTER' on the top right corner of the table.
+    <ReferenceInput
+      source='userId'
+      label='User'
+      reference='users'
+      key='userKey'
+    />,
   ];
 
   // <List> is the component that will fetch the data from the backend.
