@@ -1,6 +1,6 @@
 import { DataTable, List, ReferenceField } from 'react-admin';
 
-export const PostList = () => (
+const PostList = () => (
   <List>
     <DataTable>
       <DataTable.Col source='userId'>
@@ -12,3 +12,5 @@ export const PostList = () => (
     </DataTable>
   </List>
 );
+
+export default PostList;
