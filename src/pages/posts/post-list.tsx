@@ -1,9 +1,9 @@
 import {
   DataTable,
-  FunctionField,
+  // FunctionField,
   List,
   ReferenceField,
-  SimpleList,
+  // SimpleList,
   useRecordContext,
 } from 'react-admin';
 
