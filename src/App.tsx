@@ -13,6 +13,7 @@ import PostShow from './pages/posts/post-show.tsx';
 import UserShow from './pages/users/user-show.tsx';
 import PostEdit from './pages/posts/post-edit.tsx';
 import UserEdit from './pages/users/user-edit.tsx';
+import PostCreate from './pages/posts/post-create.tsx';
 
 export const App = () => (
   <Admin layout={Layout} dataProvider={dataProvider}>
@@ -30,7 +31,15 @@ export const App = () => (
 
     {/* Edit button is on the top right corner of each show page. */}
     {/*<Resource name='posts' list={PostList} show={PostShow} edit={EditGuesser} />*/}
-    <Resource name='posts' list={PostList} show={PostShow} edit={PostEdit} />
+
+    {/* The backend does not actually get added when we create a new record, so the list will not show the extra record after it's adde. */}
+    <Resource
+      name='posts'
+      list={PostList}
+      show={PostShow}
+      edit={PostEdit}
+      create={PostCreate}
+    />
 
     {/*<Resource name='users' list={UserList} show={ShowGuesser} />*/}
     {/*<Resource name='users' list={UserList} show={UserShow} edit={EditGuesser} />*/}
