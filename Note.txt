@@ -1,0 +1,25 @@
+React Admin Crash Course 2025 (https://www.youtube.com/watch?v=PyaSnpXssks)
+
+https://github.com/Annie-Huang/react-admin-demo
+
+https://marmelab.com/react-admin/Tutorial.html
+
+-----------------------------------------------------------------------------------
+
+PS C:\react> npm create react-admin@latest react-admin-demo -- --interactive
+
+Choose:
+❯ JSON Server
+  A data provider based on the JSON Server API (https://github.com/typicode/json-server)
+
+Select the auth provider you want to use, and validate with Enter:
+❯ None
+  No authProvider
+
+Enter the name of a resource you want to add, and validate with Enter (leave empty to finish):
+(leave empty)
+
+How do you want to install the dependencies?
+❯ Using npm
+
+
