@@ -1,4 +1,10 @@
-import { DataTable, List, ReferenceField, SimpleList } from 'react-admin';
+import {
+  DataTable,
+  FunctionField,
+  List,
+  ReferenceField,
+  SimpleList,
+} from 'react-admin';
 
 const PostList = () => {
   // <List> is the component that will fetch the data from the backend.
@@ -6,8 +12,12 @@ const PostList = () => {
     <List>
       <DataTable>
         <DataTable.Col source='id' />
-        <DataTable.Col source='body' />
         <DataTable.Col source='title' label='Post Title' />
+        {/*<DataTable.Col source='body' />*/}
+        <FunctionField
+          label='Excerpt'
+          render={(record) => `${record.body.substring(0, 50)}...`}
+        />
         <DataTable.Col source='userId'>
           <ReferenceField source='userId' reference='users' />
         </DataTable.Col>
