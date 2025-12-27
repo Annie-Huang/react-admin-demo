@@ -15,6 +15,7 @@ const PostList = () => {
         <DataTable.Col source='title' label='Post Title' />
         {/*<DataTable.Col source='body' />*/}
         <FunctionField
+          source='body'
           label='Excerpt'
           render={(record) => `${record.body.substring(0, 50)}...`}
         />
