@@ -4,10 +4,12 @@ import {
   List,
   ReferenceField,
   SimpleList,
+  useRecordContext,
 } from 'react-admin';
 
 const PostPanel = () => {
-  return <div>Hello</div>;
+  const record = useRecordContext();
+  return <div>{record?.body}</div>;
 };
 
 const PostList = () => {
