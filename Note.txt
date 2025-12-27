@@ -103,5 +103,5 @@ export const UserShow = () => (
 
 http://localhost:5173/#/posts
 http://localhost:5173/#/users
-http://localhost:5173/#/posts/2/show
+http://localhost:5173/#/posts/2/show    << Click into each row in the table to go to the /show path.
 http://localhost:5173/#/users/1/show
