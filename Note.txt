@@ -53,6 +53,31 @@ export const PostList = () => (
 );
 -------------------------
 
+
+
+http://localhost:5173/#/posts/1/show
+And you can see the console the below:
+-------------
+Guessed Show:
+
+import { ReferenceField, Show, SimpleShowLayout, TextField } from 'react-admin';
+
+export const PostShow = () => (
+    <Show>
+        <SimpleShowLayout>
+            <ReferenceField source="userId" reference="users" />
+            <TextField source="id" />
+            <TextField source="title" />
+            <TextField source="body" />
+        </SimpleShowLayout>
+    </Show>
+);
+-------------------------
+
+
+
+
+
 http://localhost:5173/#/posts
 http://localhost:5173/#/users
 http://localhost:5173/#/posts/2/show
