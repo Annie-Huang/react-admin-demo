@@ -1,6 +1,7 @@
 import { Admin, ListGuesser, Resource } from 'react-admin';
 import { Layout } from './Layout';
 import { dataProvider } from './dataProvider';
+import PostList from './pages/posts/post-list.tsx';
 
 export const App = () => (
   <Admin layout={Layout} dataProvider={dataProvider}>
@@ -8,6 +9,9 @@ export const App = () => (
         After you add below, you can see the posts already displayed in table with sorting and pagination
         in http://localhost:5173/#/posts
     */}
-    <Resource name='posts' list={ListGuesser} />
+    {/*<Resource name='posts' list={ListGuesser} />*/}
+
+    {/* Now we got control on the list, e.g. change the columns order to display */}
+    <Resource name='posts' list={PostList} />
   </Admin>
 );
