@@ -10,7 +10,13 @@ const PostList = () => {
   // <List> is the component that will fetch the data from the backend.
   return (
     <List>
-      <DataTable>
+      {/* <DataTable sx={{ '.RaDataTable-headerRow': { padding: '16px' } }}>
+          Cannot increase the padding for .RaDataTable-row (<tr>) or .RaDataTable-thead (<thead>) component in CSS as their display value is
+          display: table-row;
+          display: table-header-group;
+          In order to increase the padding, we have to do it in the cell level: https://stackoverflow.com/questions/3656615/padding-a-table-row
+      */}
+      <DataTable sx={{ '.RaDataTable-headerCell': { padding: '16px' } }}>
         <DataTable.Col source='id' />
         <DataTable.Col source='title' label='Post Title' />
 
