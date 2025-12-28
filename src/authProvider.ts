@@ -10,4 +10,24 @@ export const authProvider: AuthProvider = {
       return Promise.reject();
     }
   },
+  // Runs when logout
+  logout: () => {
+    // Remove username
+    localStorage.removeItem('username');
+    return Promise.resolve();
+  },
+  // Runs when API returns error
+  checkError: ({ status }: { status: number }) => {
+    if (status === 401 || status === 403) {
+      localStorage.removeItem('username');
+      return Promise.reject();
+    }
+    return Promise.resolve();
+  },
+  // Runs when the user navigates to a new location to check for auth
+  checkAuth: () => {
+    return localStorage.getItem('username')
+      ? Promise.resolve()
+      : Promise.reject();
+  },
 };
