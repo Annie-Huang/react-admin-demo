@@ -15,6 +15,8 @@ import PostEdit from './pages/posts/post-edit.tsx';
 import UserEdit from './pages/users/user-edit.tsx';
 import PostCreate from './pages/posts/post-create.tsx';
 import UserCreate from './pages/users/user-create.tsx';
+import ArticleIcon from '@mui/icons-material/Article';
+import PersonIcon from '@mui/icons-material/Person';
 
 export const App = () => (
   <Admin layout={Layout} dataProvider={dataProvider}>
@@ -35,6 +37,7 @@ export const App = () => (
 
     {/* The backend does not actually get added when we create a new record, so the list will not show the extra record after it's adde. */}
     <Resource
+      icon={ArticleIcon}
       name='posts'
       list={PostList}
       show={PostShow}
@@ -46,6 +49,7 @@ export const App = () => (
     {/*<Resource name='users' list={UserList} show={UserShow} edit={EditGuesser} />*/}
     {/*<Resource name='users' list={UserList} show={UserShow} edit={UserEdit} />*/}
     <Resource
+      icon={PersonIcon}
       name='users'
       list={UserList}
       show={UserShow}
