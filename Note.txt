@@ -146,3 +146,7 @@ http://localhost:5173/#/posts/2         << Edit page.
 http://localhost:5173/#/users/1/show
 http://localhost:5173/#/users/1
 http://localhost:5173/#/posts/create
+
+username: admin
+password: password
+Logout button is at the top right corner of the page (person icon) after login.
