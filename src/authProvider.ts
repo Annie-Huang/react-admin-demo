@@ -30,4 +30,6 @@ export const authProvider: AuthProvider = {
       ? Promise.resolve()
       : Promise.reject();
   },
+  // Runs when user navigates to a new location to check for permissions or rules
+  getPermissions: () => Promise.resolve(),
 };
