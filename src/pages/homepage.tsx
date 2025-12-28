@@ -1,6 +1,6 @@
 import { Box, Card, CardContent, Typography } from '@mui/material';
 
-const Homepage = () => {
+const HomePage = () => {
   return (
     <Box
       sx={{
@@ -25,4 +25,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default HomePage;

@@ -17,9 +17,10 @@ import PostCreate from './pages/posts/post-create.tsx';
 import UserCreate from './pages/users/user-create.tsx';
 import ArticleIcon from '@mui/icons-material/Article';
 import PersonIcon from '@mui/icons-material/Person';
+import HomePage from './pages/homepage.tsx';
 
 export const App = () => (
-  <Admin layout={Layout} dataProvider={dataProvider}>
+  <Admin layout={Layout} dataProvider={dataProvider} dashboard={HomePage}>
     {/* The reason we got 'posts' for name because of https://jsonplaceholder.typicode.com/posts
         After you add below, you can see the posts already displayed in table with sorting and pagination
         in http://localhost:5173/#/posts
